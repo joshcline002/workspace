@@ -1,0 +1,15 @@
+
+public interface Item {
+	
+	
+	public int getPriceCode();
+	
+	public void setPriceCode();
+	
+	public String getTitle();
+	
+	public double getCost(int daysRented);
+	
+	public int getPoints(int daysRented);
+
+}

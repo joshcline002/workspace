@@ -1,0 +1,21 @@
+
+public class Item {
+	
+	public Item(){
+		
+	}
+	
+	public int getPriceCode(){
+		return 0;
+	}
+	
+	public void setPriceCode(){
+		
+	}
+	
+	public String getTitle(){
+		return "NONE";
+	}
+	
+
+}
