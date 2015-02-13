@@ -1,0 +1,54 @@
+import java.util.Enumeration;
+import java.util.Vector;
+
+
+public class RentalList {
+	private Vector<Rental> _rentals;
+	Enumeration<Rental> rentals;
+	Rental each;
+	public RentalList() {
+	}
+	
+	public void addRental(Rental arg) {
+        _rentals.addElement(arg);
+        rentals = _rentals.elements();
+    }
+	
+	public double rentalAmount(){
+		double amount = 0;
+		each  = (Rental) rentals.nextElement();
+		 amount = rentalPrice(amount, each);
+		return amount;
+	}
+	
+	public String movieTitle(){
+		return each.movieTitle();
+	}
+	
+	public boolean rentalHasNext(){
+		return rentals.hasMoreElements();
+	}
+	
+	private double rentalPrice(double thisAmount, Rental each) {
+		switch (each.getMovie().getPriceCode()) {
+		    case Movie.REGULAR:
+		        thisAmount += 2;
+		        if (each.getDaysRented() > 2) {
+		            thisAmount += (each.getDaysRented() - 2) * 1.5;
+		        }
+		        break;
+		    case Movie.NEW_RELEASE:
+		        thisAmount += each.getDaysRented() * 3;
+		        break;
+		    case Movie.CHILDRENS:
+		        thisAmount += 1.5;
+		        if (each.getDaysRented() > 3) {
+		            thisAmount += (each.getDaysRented() - 3) * 1.5;
+		        }
+		        break;
+		}
+		return thisAmount;
+	}
+	
+	
+}

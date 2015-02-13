@@ -1,0 +1,11 @@
+
+public class FrequencyPoints {
+	double points;
+	public static final int POINTS_CHILDRENS   = 0;
+    public static final int POINTS_REGULAR     = 0;
+    public static final int POINTS_NEW_RELEASE = 0;
+    
+	public FrequencyPoints() {
+		
+	}
+}

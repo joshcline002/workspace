@@ -1,0 +1,48 @@
+
+public class PriceAmount {
+	double thisAmount;
+	double totalAmount;
+	public PriceAmount() {
+	}
+	
+	public double rentalPrice(Rental each) {
+		
+		if (each.getPriceCode() == Movie.REGULAR){
+		
+			movieRegular(each.getDaysRented());
+			
+		} else if(each.getPriceCode() == Movie.NEW_RELEASE){
+			
+			movieNewRelease(each.getDaysRented());
+			
+		}else if(each.getPriceCode() == Movie.CHILDRENS){
+			
+			movieChildrens(each.getDaysRented());
+		
+		}
+		totalAmount += thisAmount;
+		return thisAmount;
+	}
+	
+	private void movieChildrens(int daysRented){
+		thisAmount += 1.5;
+        if (daysRented > 3) {
+            thisAmount += (daysRented - 3) * 1.5;
+        }
+	}
+	
+	private void movieRegular(int daysRented){
+		thisAmount += 2;
+        if (daysRented > 2) {
+            thisAmount += (daysRented - 2) * 1.5;
+        }
+	}
+	
+	private void movieNewRelease(int daysRented){
+		thisAmount += daysRented * 3;
+	}
+	
+	public double getTotalAmount(){
+		return totalAmount;
+	}
+}

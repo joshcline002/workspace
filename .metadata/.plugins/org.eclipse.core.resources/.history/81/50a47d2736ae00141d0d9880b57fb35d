@@ -1,0 +1,15 @@
+import java.util.Vector;
+
+
+public class RentalList {
+	private Vector<Rental> _rentals;
+
+	public RentalList() {
+	}
+	
+	public void addRental(Rental arg) {
+        _rentals.addElement(arg);
+    }
+	
+	
+}
