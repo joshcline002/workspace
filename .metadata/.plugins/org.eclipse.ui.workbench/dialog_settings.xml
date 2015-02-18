@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="60" key="DIALOG_X_ORIGIN"/>
+		<item value="0" key="DIALOG_Y_ORIGIN"/>
+	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
 		<item value="624" key="dialogHeight"/>
 		<item value="1080" key="dialogWidth"/>
@@ -30,6 +34,7 @@
 	<section name="ZipFileImportWizard">
 		<item value="false" key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\jccline\Downloads\randoop.1.3.4.jar"/>
 			<item value="C:\Users\jccline\417test1.zip"/>
 		</list>
 	</section>
@@ -37,11 +42,11 @@
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\jccline\Downloads"/>
+			<item value="C:\Users\jccline\workspace\417test1"/>
 			<item value="C:\Users\jccline\workspace\SE329Assign2\src"/>
 			<item value="C:\Users\jccline\Documents\School\SE\417\Assignment\assign1\movie-rental\movie-rental"/>
 			<item value="C:\Users\jccline\workspace"/>
-			<item value="C:\Users\jccline\Downloads"/>
-			<item value="C:\Users\jccline"/>
 		</list>
 	</section>
 </section>

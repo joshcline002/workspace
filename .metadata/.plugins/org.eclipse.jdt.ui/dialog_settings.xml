@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="400,442" key="UserLibraryLoadSaveDialog.size"/>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
 		<item value="false" key="updateSimilarElements"/>
 		<item value="1" key="updateSimilarElementsMatchStrategy"/>
@@ -56,7 +57,7 @@
 		</list>
 	</section>
 	<section name="ClasspathContainerSelectionPage">
-		<item value="1" key="index"/>
+		<item value="3" key="index"/>
 	</section>
 	<section name="NewPackageWizardPage">
 		<item value="false" key="create_package_info_java"/>
