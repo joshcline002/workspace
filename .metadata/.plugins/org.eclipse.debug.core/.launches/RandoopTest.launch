@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="randoop.plugin.core.launching.gentestsType">
+<listAttribute key="randoop.AVAILABLE_METHODS.417test2%3%/417test2/src%Assign2"/>
 <listAttribute key="randoop.AVAILABLE_TYPES">
 <listEntry value="417test2%3%/417test2/src%QueueFaulty"/>
 </listAttribute>
@@ -16,6 +17,7 @@
 <stringAttribute key="randoop.OUTPUT_DIRECTORY" value="test"/>
 <stringAttribute key="randoop.PROJECT_NAME" value="417test2"/>
 <stringAttribute key="randoop.RANDOM_SEED" value="0"/>
+<listAttribute key="randoop.SELECTED_METHODS.417test2%3%/417test2/src%Assign2"/>
 <stringAttribute key="randoop.TEST_KINDS" value="all"/>
 <stringAttribute key="randoop.THREAD_TIMEOUT" value="5000"/>
 <stringAttribute key="randoop.TIME_LIMIT" value="600"/>
