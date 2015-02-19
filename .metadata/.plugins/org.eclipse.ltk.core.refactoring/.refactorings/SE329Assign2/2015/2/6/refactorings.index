@@ -1,7 +1,0 @@
-1423245843724	Extract method 'movieResult'
-1423245893428	Extract method 'totalResult'
-1423246317910	Extract method 'frequentRenterPoints'
-1423246579608	Extract method 'rentalPrice'
-1423249831209	Extract Class...
-1423249860780	Rename type 'CustomerData'
-1423254294024	Extract method 'footerResult'
