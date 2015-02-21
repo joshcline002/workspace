@@ -28,15 +28,11 @@ public class RentalList {
 		return each.getPriceCode();
 	}
 	
-	public int dayRented(){
-		return each.getDaysRented();
-	}
-	
 	public double getTotalAmount(){
 		return totalAmount;
 	}
 	
-	public String movieTitle(){
+	public String title(){
 		return each.movieTitle();
 	}
 	

@@ -1,0 +1,36 @@
+import java.util.Enumeration;
+import java.util.Vector;
+
+
+public class BuyList {
+	private Vector<Item> _Item = new Vector<Item>();
+	Enumeration<Item> items;
+	Item each;
+	double totalAmount;
+	int totalPoints;
+	public BuyList() {
+	}
+	
+	public void buyItem(Item arg) {
+        _Item.addElement(arg);
+        items = _Item.elements();
+    }
+	
+	public double buy(){
+		each  = (Item) items.nextElement();
+		 return each.buy();
+	}
+	
+	public int priceCode(){
+		return each.getPriceCode();
+	}
+	
+	public String movieTitle(){
+		return each.getTitle();
+	}
+	
+	public boolean rentalHasNext(){
+		return items.hasMoreElements();
+	}
+	
+}

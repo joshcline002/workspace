@@ -1,16 +1,17 @@
 public class Movie implements Item {
 
-
-    public static final int CHILDRENS   = 2;
-    public static final int REGULAR     = 0;
-    public static final int NEW_RELEASE = 1;
+	public static final int CHILDRENS   = 2;
+	public static final int REGULAR     = 0;
+	public static final int NEW_RELEASE = 1;
+	 
+	private String _title;
+	private int    _priceCode;
+	private double _cost;
     
-    private String _title;
-    private int    _priceCode;
-    
-    public Movie(String title, int priceCode) {
+    public Movie(String title, int priceCode, double cost) {
         _title = title;
         _priceCode = priceCode;
+        _cost = cost;
     }
     
     @Override
@@ -38,6 +39,11 @@ public class Movie implements Item {
 	public int getPoints(int daysRented) {
 		// TODO Auto-generated method stub
 		return 0;
+	}
+
+	@Override
+	public double buy() {
+		return _cost;
 	}
 
 }
