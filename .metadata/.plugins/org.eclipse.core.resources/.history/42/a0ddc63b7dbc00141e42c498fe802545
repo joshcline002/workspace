@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+
+
+public class Part2a {
+
+	public static void main(String[] args) {
+		boolean found = true;
+		int size = 0;
+		InsertionSort sort = new InsertionSort();
+		int i = 0;
+		while(found){
+			ArrayList list = new ArrayList();
+			if(sort.analyzeSort(list)> 1000){
+				found = false;
+				size = i;
+			} else{
+				i = i*2;
+			}
+		}
+
+	}
+
+}

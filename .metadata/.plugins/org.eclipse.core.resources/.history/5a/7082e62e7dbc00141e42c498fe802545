@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+
+public class Part2a {
+
+	public static void main(String[] args) {
+		boolean found = true;
+		InsertionSort sort = new InsertionSort();
+		int i = 0;
+		while(found){
+			ArrayList list = new ArrayList();
+			
+		}
+
+	}
+
+}

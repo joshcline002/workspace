@@ -2,6 +2,10 @@
 public class MatrixOperations implements MatrixAnalysis {
 	long startTime;
 	long endTime;
+	public MatrixOperations(){
+		
+	}
+	
 	@Override
 	public long analyzeMultiple(double[][] m1, double[][] m2, double[][] m3) {
 		startTime = System.currentTimeMillis();

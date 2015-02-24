@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+
+public class InsertionSort<E extends Comparable<? super E>> implements  SortAnalysis<E> {
+
+	@Override
+	public long analyzeSort(ArrayList<E> list) {;
+		int i, j;
+		for(i = 1; i< list.size(); i++){
+			j = i;
+			
+			while(j > 0 && 1 == list.get(j-i).compareTo(list.get(i))){
+				list.set(j, list.get(j-i));
+				j--;
+			}
+			list.set(j, list.get(i));
+		}
+		return 0;
+	}
+
+
+}

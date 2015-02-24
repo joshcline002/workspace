@@ -1,0 +1,20 @@
+
+public class Part1a {
+
+	public static void main(String[] args) {
+		MatrixOperations op = new MatrixOperations();
+		boolean found = false;
+		int i = 1;
+		int j = 1;
+		while (found){
+			double[][] m1 = new double[i][i];
+			double[][] m2 = new double[i][i];
+			double[][] m3 = new double[i][i];
+			
+			op.analyzeMultiple(m1, m2, m3);
+			
+		}
+
+	}
+
+}

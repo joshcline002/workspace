@@ -1,0 +1,61 @@
+import java.util.Random;
+
+public class Part1a {
+
+	public static void main(String[] args) {
+		MatrixOperations op = new MatrixOperations();
+		Random ranNum = new Random();
+		boolean found = true;
+		int i = 1;
+		int size = 1;
+		while (found){
+			double[][] m1 = new double[i][i];
+			double[][] m2 = new double[i][i];
+			double[][] m3 = new double[i][i];
+			
+			for(int k = 0; k<i; k++){
+				for(int j = 0; j<i; j++){
+				m1[k][j] = ranNum.nextInt(10);
+				m2[k][j] = ranNum.nextInt(10);
+				}
+			}
+			
+			if(op.analyzeMultiple(m1, m2, m3) > 1000){
+				found = false;
+				size = i;
+			} else {
+				i = i*2;
+			}
+			
+		}
+		System.out.println("Found size =" + size);
+		found = true;
+		i = size/2;
+		size = size/2;
+		while (found){
+			double[][] m1 = new double[i][i];
+			double[][] m2 = new double[i][i];
+			double[][] m3 = new double[i][i];
+			
+			for(int k = 0; k<i; k++){
+				for(int j = 0; j<i; j++){
+				m1[k][j] = ranNum.nextInt(10);
+				m2[k][j] = ranNum.nextInt(10);
+				}
+			}
+			
+			if(op.analyzeMultiple(m1, m2, m3) > 1000){
+				System.out.println(op.analyzeMultiple(m1, m2, m3)); 
+				found = false;
+				size = i;
+			} else {
+				i++;
+			}
+			
+		}
+		
+		System.out.println("Found size =" + size);
+
+	}
+
+}
