@@ -1,0 +1,61 @@
+import java.util.ArrayList;
+import java.util.Random;
+
+
+public class Part2a {
+
+	public static void main(String[] args) {
+		boolean found = true;
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		int size = 0;
+		long time;
+		int j = 0;
+		int numTimes=0;
+		int avgSize = 0;
+		InsertionSort sort = new InsertionSort();
+		Random ranNum = new Random();
+		while(numTimes<5){
+		int i = 2;
+		found = true;
+		while(found){
+			while(j<i){
+				try{
+				list.add(ranNum.nextInt());
+				j++;
+				}catch (OutOfMemoryError e){
+				}
+			}
+			time = sort.analyzeSort(list);
+			if(time > 1000){
+				found = false;
+				size = i;
+			} else if( time > 900){
+				i++;
+			}else{
+				i = i*2;
+			}
+		}
+		list.clear();
+		j = 0;
+		System.out.println("Found size =" + size);
+		avgSize += size;
+		numTimes++;
+	}
+		size = avgSize/numTimes;
+		System.out.println("Found Average Size =" + size);
+		int i = 1;
+		for(int k =  0; k<size; k++){
+			while(j<i){
+				list.add(i-j);
+				j++;
+			}
+			time = sort.analyzeSort(list); 
+			
+				i = i+100;
+				list.clear();
+				
+		}
+		}
+
+	}
+

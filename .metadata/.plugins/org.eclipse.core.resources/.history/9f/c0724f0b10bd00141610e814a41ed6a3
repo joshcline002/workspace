@@ -1,0 +1,49 @@
+import java.util.ArrayList;
+import java.util.Random;
+
+
+public class Part2a {
+
+	public static void main(String[] args) {
+		boolean found = true;
+		int size = 0;
+		long time;
+		int j = 0;
+		InsertionSort sort = new InsertionSort();
+		Random ranNum = new Random();
+		int i = 2;
+		ArrayList list = new ArrayList();
+		while(found){
+			for (j = 0; j<i; j++){
+				list.add(ranNum.nextInt(1000));
+				j++;
+			}
+			time = sort.analyzeSort(list); 
+			System.out.println(time);
+			if(time > 1000){
+				found = false;
+				size = i;
+			} else{
+				i = i*2;
+				list.clear();
+			}
+		}
+		list.clear();
+		
+		System.out.println("Found size =" + size);
+		/**i = 1;
+		for(int k =  0; k<size; k++){
+			for(j = 0; j<i; j++){
+				list.add(i-j);
+			}
+			time = sort.analyzeSort(list); 
+			System.out.println(time);
+			
+				i = i+100;
+				list.clear();
+				
+		}*/
+		}
+
+	}
+
