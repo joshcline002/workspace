@@ -52,7 +52,7 @@ public class Part2a {
 		int timing;
 		size = avgSize/numTimes;
 		System.out.println("Found Average Size =" + size);
-		int i = 0;
+		int i = 1;
 		for(int k =  0; k<100; k++){
 			while(j<i){
 				list.add(i-j);
@@ -67,7 +67,7 @@ public class Part2a {
 				
 		}
 		bw.close();
-		i = 0;
+		i = size;
 		for(int k =  0; k<100; k++){
 			while(j<i){
 				list.add(ranNum.nextInt());
@@ -76,7 +76,7 @@ public class Part2a {
 			time = sort.analyzeSort(list); 
 			bw2.write((int) time);
 			bw2.newLine();
-				i = i+size/100;
+				i = i-size/100;
 				
 		}
 		bw2.close();

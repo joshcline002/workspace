@@ -76,7 +76,7 @@ public class Part2a {
 			time = sort.analyzeSort(list); 
 			bw2.write((int) time);
 			bw2.newLine();
-				i = i+size/100;
+				i = i-size/100;
 				
 		}
 		bw2.close();
