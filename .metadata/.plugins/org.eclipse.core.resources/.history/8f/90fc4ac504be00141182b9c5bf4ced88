@@ -1,0 +1,63 @@
+import java.util.ArrayList;
+import java.util.Stack;
+
+
+public class QuickSort<E extends Comparable<? super E>> implements SortAnalysis<E> {
+
+	@Override
+	public long analyzeSort(ArrayList<E> list) {
+		long endTime;
+		long startTime = System.currentTimeMillis();
+		
+		Stack<Integer> stack = new Stack<Integer>();
+		stack.push(0);
+		stack.push(list.size()-1);
+		
+		while(!stack.isEmpty()){
+			int end = stack.pop();
+			int start = stack.pop();
+			if ((end - start)<1){
+				continue;
+			}
+			int p = start + ((end-start)/2);
+			p = partition(list, p, start, end);
+			
+			stack.push(p+1);
+			stack.push(end);
+			
+			stack.push(start);
+			stack.push(p);
+		}
+		
+		endTime = System.currentTimeMillis();
+		return endTime - startTime;
+	}
+	
+	private int partition(ArrayList<E> list, int p, int left, int right ){
+		int l = left;
+		int r = right;
+		E pivot = list.get((l+r)/2);
+		E tmp;
+		
+		while(right >= left){
+			while (list.get(left).compareTo(pivot)<0){
+				left++;
+			}
+			
+			while(list.get(right).compareTo(pivot)>0){
+				right--;
+			}
+			
+			if(left <= right){
+				tmp = list.get(left);
+				list.set(left, list.get(right));
+				list.set(right, tmp);
+				left++;
+				right--;
+			}
+			
+		}
+		return left;
+	}
+
+}
