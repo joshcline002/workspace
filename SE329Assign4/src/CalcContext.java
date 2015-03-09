@@ -3,13 +3,14 @@ import java.util.Stack;
 
 public class CalcContext implements State{
 	
-	private State state = new StartState();
+	private State state;
 	public Stack<String> operation = new Stack<String>();
 	public Stack<Integer> numbers = new Stack<Integer>();
 	public String num = "";
+	public Boolean error = false;
 	
 	public CalcContext(){
-		state = null;
+		state = new StartState();
 	}
 	
 	public void setState(String c){
@@ -47,9 +48,9 @@ public class CalcContext implements State{
 			}
 			
 		}else{
-			
-			this.state = new ErrorState();
-			
+			if(!(this.state instanceof ErrorState)){
+				this.state = new ErrorState();
+			}
 		}
 	}
 	
