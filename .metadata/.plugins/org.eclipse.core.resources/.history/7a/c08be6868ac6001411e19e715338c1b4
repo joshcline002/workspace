@@ -1,0 +1,10 @@
+
+public class NumberState implements State {
+
+	@Override
+	public void doAction(CalcContext context) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

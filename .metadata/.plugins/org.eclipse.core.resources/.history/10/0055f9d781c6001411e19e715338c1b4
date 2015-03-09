@@ -1,0 +1,30 @@
+import java.util.Stack;
+
+
+public class CalcContext implements State{
+	private State state;
+	public Stack<String> operation = new Stack<String>();
+	public Stack<Integer> numbers = new Stack<Integers>();
+	
+	
+	public CalcContext(){
+		state = null;
+	}
+	
+	public void setState(State state){
+		this.state = state;
+	}
+	
+	public State getState(){
+		return this.state;
+	}
+
+	@Override
+	public void doAction(CalcContext context) {
+		this.state.doAction(context);
+		
+	}
+	
+	
+
+}
