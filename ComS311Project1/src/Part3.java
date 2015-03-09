@@ -15,9 +15,7 @@ public static void main(String[] args) throws IOException {
 	long time = 0;
 	int j = 0;
 	
-	File f = new File("QuickSortWorstTimes.txt");
 	File g = new File("QuickSortRandomTimes.txt");
-	BufferedWriter bw = new BufferedWriter(new FileWriter(f));
 	BufferedWriter bw2 = new BufferedWriter(new FileWriter(g)); 
 	QuickSort sort = new QuickSort();
 	Random ranNum = new Random();
@@ -45,7 +43,7 @@ public static void main(String[] args) throws IOException {
 		found = true;
 		max = size;
 		while(found){
-			if(max < min){
+			if(max - min <= 3){
 				found = false;
 			} else{
 				mid = (max - min)/2 + min;
@@ -54,11 +52,11 @@ public static void main(String[] args) throws IOException {
 					list.add(ranNum.nextInt());
 				}
 				time = sort.analyzeSort(list);
-				System.out.println("BS time" + time);
-				if(time>1002){
+				System.out.println("BS time " + time + " mid " + mid + " max " + max + " min " + min);
+				if(time > 1000){
 					size = mid;
 					max = mid+1;
-				} else if(time<998){
+				} else if(time<1000){
 					size = mid;
 					min = mid-1;
 				} else {
@@ -73,24 +71,6 @@ public static void main(String[] args) throws IOException {
 	j = 0;
 	System.out.println("Found size =" + size + "Time =" + time);
 	int timing;
-	
-	i = 1;
-	for(int k =  0; k<100; k++){
-		while(j<i){
-			list.add(i-j);
-			j++;
-		}
-		time = sort.analyzeSort(list); 
-		timing = (int)time;
-		System.out.println("time" + timing + "size" + i);
-		bw.write(timing + "");
-		bw.newLine();
-		i = i+size/100;
-		list.clear();
-		j = 0;
-			
-	}
-	bw.close();
 	i = 1;
 	j = 0;
 	for(int k =  0; k<100; k++){
@@ -108,5 +88,6 @@ public static void main(String[] args) throws IOException {
 		j = 0;
 	}
 	bw2.close();
+	
 	}
 }

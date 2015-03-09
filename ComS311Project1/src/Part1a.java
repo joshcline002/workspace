@@ -1,11 +1,17 @@
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Random;
 
 public class Part1a {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		MatrixOperations op = new MatrixOperations();
 		Random ranNum = new Random();
 		boolean found = true;
+		File g = new File("MatrixOperations.txt");
+		BufferedWriter bw2 = new BufferedWriter(new FileWriter(g)); 
 		int i = 1;
 		int size = 1;
 		int mid;
@@ -64,14 +70,17 @@ public class Part1a {
 			}
 		}
 		System.out.println("Found size = " + size);
-		
+	int timing;
 	for(int j = 0; j<size; j++){
 		double[][] m1 = new double[j][j];
 		double[][] m2 = new double[j][j];
 		double[][] m3 = new double[j][j];
-		
-		System.out.println(op.analyzeMultiple(m1, m2, m3));
-		
+		timing = (int)op.analyzeMultiple(m1, m2, m3);
+		System.out.println(timing);
+		bw2.write(timing + "");
+		bw2.newLine();
 		}
+		bw2.close();
+		System.out.println("Done");
 	}
 }
