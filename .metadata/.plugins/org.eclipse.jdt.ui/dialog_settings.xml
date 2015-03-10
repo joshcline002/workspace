@@ -52,12 +52,13 @@
 		<item value="400" key="height"/>
 	</section>
 	<section name="FatJarPackageWizard">
-		<item value="C:\Users\jccline\workspace" key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION"/>
-		<item value="MovieSystem - SE329Assign2" key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME"/>
-		<item value="C:\Users\jccline\Downloads\Cline_Movie_System\Cline_Movie_System.jar" key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION"/>
+		<item value="C:\Users\jccline\workspace.xml" key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION"/>
+		<item value="Calculator - SE329Assign4" key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME"/>
+		<item value="C:\Users\Josh\Downloads\Cline_Simple_Calculator.jar" key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION"/>
 		<item value="false" key="FatJarPackageWizardPage.ANTSCRIPT_SAVE"/>
 		<item value="2" key="FatJarPackageWizardPage.LIBRARY_HANDLING"/>
 		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="C:\Users\Josh\Downloads\Cline_Simple_Calculator.jar"/>
 			<item value="C:\Users\jccline\Downloads\Cline_Movie_System\Cline_Movie_System.jar"/>
 			<item value="C:\Users\jccline\Downloads\Cline_Movie_System.jar"/>
 			<item value="C:\Users\jccline\Downloads\test_Cline.jar"/>
