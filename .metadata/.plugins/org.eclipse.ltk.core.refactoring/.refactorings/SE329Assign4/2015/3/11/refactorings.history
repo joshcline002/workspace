@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;SE329Assign4/src/Context.java&apos; to &apos;CalcContext.java&apos;" description="Rename resource &apos;Context.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Context.java" name="CalcContext.java" stamp="1425915877561" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;SE329Assign4/src/EndState.java&apos; to &apos;ResultState.java&apos;" description="Rename resource &apos;EndState.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/EndState.java" name="ResultState.java" stamp="1425916245727" updateReferences="true"/>
-</session>
