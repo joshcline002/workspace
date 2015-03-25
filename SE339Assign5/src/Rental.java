@@ -1,8 +1,21 @@
 public class Rental {
     private Item item_;
     private int   _daysRented;
+    public String type;
     
     public Rental(Item item, int daysRented) {
+    	if (item instanceof Books){
+			type = "book";
+		} else if (item instanceof CDs){
+			type = "cd";
+		} else if (item instanceof DVDs){
+			type = "dvd";
+		} else if (item instanceof Movie){
+			type = "movie";
+		} else if (item instanceof Music){
+			type = "music";
+		}
+    	
     	if(item.getPriceCode() == Item.CHILDRENS){
     		item_ = new Childrens(item);
     	} else if (item.getPriceCode() == Item.REGULAR){

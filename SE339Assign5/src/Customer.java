@@ -6,12 +6,13 @@ import java.io.IOException;
 
 public class Customer {
     private String _name;
-    private RentalList _rentals = new RentalList();
+    private RentalList _rentals;
     private BuyList _bought = new BuyList();
     BufferedWriter bw;
     
-    public Customer (String name) {
+    public Customer (String name, int age) {
         _name = name;
+        _rentals = new RentalList(age);
     }
     
     public void addRental(Rental arg) {
