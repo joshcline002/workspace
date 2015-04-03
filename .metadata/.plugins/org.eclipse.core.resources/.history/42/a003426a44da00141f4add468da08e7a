@@ -1,0 +1,14 @@
+
+public class IntroEnhancer implements Intro {
+	protected Intro enhancedIntro;
+	
+	public IntroEnhancer(Intro boring){
+		enhancedIntro = boring;
+	}
+	
+	public void introduction(){
+		enhancedIntro.introduction();
+	}
+	
+	
+}

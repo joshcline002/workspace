@@ -1,0 +1,15 @@
+
+public class DefaultConvo implements Convo {
+	private String name;
+	
+	public DefaultIntro(String n){
+		name = n;
+	}
+	
+	@Override
+	public void introduction() {
+		System.out.println("Hello my name is " + name);
+		
+	}
+
+}

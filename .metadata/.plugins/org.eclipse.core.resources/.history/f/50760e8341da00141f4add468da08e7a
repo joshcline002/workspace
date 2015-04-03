@@ -1,0 +1,15 @@
+
+public class DefaultIntro implements Intro {
+	private String name;
+	
+	public DefaultIntro(String n){
+		name = n;
+	}
+	
+	@Override
+	public void introduction() {
+		System.out.println("");
+		
+	}
+
+}

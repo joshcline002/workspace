@@ -1,0 +1,14 @@
+
+public class ConvoEnhancer implements Intro {
+	protected Convo enhancedIntro;
+	
+	public ConvoEnhancer(Convo boring){
+		enhancedIntro = boring;
+	}
+	
+	public void introduction(){
+		enhancedIntro.introduction();
+	}
+	
+	
+}

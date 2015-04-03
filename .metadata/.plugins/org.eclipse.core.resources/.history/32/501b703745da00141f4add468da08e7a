@@ -1,0 +1,21 @@
+
+public class DecoratorTest {
+
+	public static void main(String[] args) {
+		Intro basic = new DefaultIntro("Josh");
+		
+		Intro awesomeIntro = new ActionIntro(basic);
+		
+		Intro dundunIntro = new DramaIntro(basic);
+		
+		System.out.println("Normal intro");
+		basic.introduction();
+		
+		System.out.println("\nIntro with action decorator");
+		awesomeIntro.introduction();
+		
+		System.out.println("\nIntro with drama decorator");
+		dundunIntro.introduction();
+	}
+
+}

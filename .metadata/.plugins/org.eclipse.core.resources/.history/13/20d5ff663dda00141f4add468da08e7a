@@ -1,0 +1,9 @@
+
+public class ObserverTest {
+
+	public static void main(String[] args) {
+		MyActivity act = new MyActivity();
+
+	}
+
+}

@@ -1,0 +1,17 @@
+
+public class Friend2 implements Observer {
+	subject activityChooser;
+	
+	@Override
+	public void update() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setSubject(Subject sub) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+
+public class ActionIntro extends IntroEnhancer{
+
+	public ActionIntro(Intro enhancedIntro) {
+		super(enhancedIntro);
+	}
+	
+	@Override
+	public void introduction(){
+		enhancedIntro.introduction();
+		System.out.println("and I am about to jump out of a helicopter. While on FIRE!!!");
+	}
+
+}

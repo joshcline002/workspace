@@ -1,0 +1,19 @@
+
+public class Friend2 implements Observer {
+	Subject activityChooser;
+	Activity chose;
+	@Override
+	public void update() {
+		chose = activityChooser.getUpdate(this);
+		if(chose instanceof Book){
+			System.out.println("man I dont want to read a book. Especially not " + chose.getTitle() + " it's " + chose.getLength() + " pages long.");
+		}
+	}
+
+	@Override
+	public void setSubject(Subject sub) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

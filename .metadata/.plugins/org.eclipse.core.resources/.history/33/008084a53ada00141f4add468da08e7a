@@ -1,0 +1,48 @@
+import java.util.ArrayList;
+import java.util.List;
+
+
+
+
+public class MyActivity implements Subject {
+	private List<Observer> friends;
+	private Activity activity;
+	
+	@Override
+	public void add(Observer obj) {
+		if(!friends.contains(obj)){
+			friends.add(obj);
+		}
+	}
+
+	@Override
+	public void remove(Observer obj) {
+		if(friends.contains(obj)){
+			friends.remove(obj);
+		}
+		
+	}
+
+	@Override
+	public void notifyObservers() {
+		List<Observer> temp = new ArrayList<>(friends);
+		for(Observer obj : temp){
+			obj.update();
+		}
+		
+	}
+
+	@Override
+	public Activity getUpdate(Observer obj) {
+		return activity;
+	}
+	
+	public void watchMovie(String name, int length, double price){
+		activity = new Movie(name, length, price);
+	}
+	
+	public void readBook(String name, int length){
+		activity = new Book(name, length);
+	}
+
+}
