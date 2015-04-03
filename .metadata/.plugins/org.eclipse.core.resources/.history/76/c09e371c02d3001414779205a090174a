@@ -1,0 +1,12 @@
+
+public class Childrens_Points implements FrequentPoints {
+	
+	private int DAYS_CHILDREN = 3;
+
+	@Override
+	public int points(int priceCode, int daysRented) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

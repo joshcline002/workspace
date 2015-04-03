@@ -1,0 +1,9 @@
+
+public class Normal implements FrequentPoints {
+	
+	@Override
+	public int points(int points) {
+		return points;
+	}
+
+}

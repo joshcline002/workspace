@@ -1,0 +1,23 @@
+
+public class Points_Context {
+	
+	private FrequentPoints FrequentPoints;
+	
+	private int movies = 0;
+	private int music = 0;
+	private int dvds = 0;
+	private int books = 0;
+	private int cds = 0;
+	
+	
+	public Points_Context(Item _item, int age, int categories) {
+		
+        boolean more = age<22 && age>18;
+        if(more){
+        	
+        }
+    }
+    public int executeStrategy(int priceCode, int daysRented) {
+        return this.FrequentPoints.points(priceCode, daysRented);
+    }
+}

@@ -1,0 +1,21 @@
+
+public class Normal implements FrequentPoints {
+	private int DAYS_NEW_RELEASE = 1;
+	
+	@Override
+	public int points(int priceCode, int daysRented) {
+		int points = 0;
+		// add frequent renter points
+		points++;
+		
+		if(priceCode == Item.NEW_RELEASE){
+		// add bonus for a two day new release rental
+		    if(daysRented > (DAYS_NEW_RELEASE)) {
+		        points ++;;
+		    }
+		}
+		
+		return points;
+	}
+
+}

@@ -1,0 +1,12 @@
+
+public class Regular_Points implements FrequentPoints {
+
+	@Override
+	public int points(int daysRented) {
+		int points = 0;
+		// add frequent renter points
+		points++;
+		return points;
+	}
+
+}

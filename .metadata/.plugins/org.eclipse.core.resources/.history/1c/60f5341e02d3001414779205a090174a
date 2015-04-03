@@ -1,0 +1,14 @@
+
+public class Childrens_Points implements FrequentPoints {
+	
+	private int DAYS_CHILDREN = 3;
+
+	@Override
+	public int points(int priceCode, int daysRented) {
+		int points = 0;
+		// add frequent renter points
+		points++;
+		return points;
+	}
+
+}
