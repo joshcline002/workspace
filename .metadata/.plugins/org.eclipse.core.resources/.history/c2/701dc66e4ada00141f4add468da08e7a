@@ -1,0 +1,8 @@
+
+public interface Item {
+	public void getTitle();
+	
+	public void setParent();
+	
+	public Item getParent(Item parent);
+}

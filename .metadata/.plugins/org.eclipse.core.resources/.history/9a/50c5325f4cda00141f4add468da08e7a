@@ -1,0 +1,12 @@
+
+public class CompositeTest {
+
+	public static void main(String[] args) {
+		
+		CompositeItem everything = new CompositeItem();
+		CompositeItem actionMovies = new CompositeItem();
+		CompositeItem childrenMovies = new CompositeItem();
+		CompositeItem books = new CompositeItem();
+	}
+
+}

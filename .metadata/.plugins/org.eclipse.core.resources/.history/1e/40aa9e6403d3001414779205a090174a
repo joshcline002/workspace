@@ -1,4 +1,0 @@
-
-interface FrequentPoints {
-	int points(int priceCode; int daysRented);
-}
