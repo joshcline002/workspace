@@ -1,9 +1,0 @@
-
-public interface Activity {
-	
-	public void getPrice();
-	
-	public void getTitle();
-	
-	public void getLength();
-}

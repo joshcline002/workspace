@@ -14,12 +14,13 @@ public class AccountTest {
 	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 	private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
 	private final ByteArrayInputStream in = new ByteArrayInputStream("2".getBytes());
-	
+	private PrintStream stdout;
 	@Rule
 	public ExpectedException expectedEx = ExpectedException.none();
 
 	@Before
 	public void setUpStreams() {
+		stdout = System.out;
 	    System.setOut(new PrintStream(outContent));
 	}
 	
@@ -240,7 +241,7 @@ public class AccountTest {
 	
 	@After
 	public void cleanUpStreams() {
-	    System.setOut(null);
+	    System.setOut(stdout);;
 	}
 	
 	

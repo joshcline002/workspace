@@ -1,9 +1,0 @@
-
-public class DecoratorTest {
-
-	public static void main(String[] args) {
-		Intro basic = new DefaultIntro("Josh");
-		
-	}
-
-}
