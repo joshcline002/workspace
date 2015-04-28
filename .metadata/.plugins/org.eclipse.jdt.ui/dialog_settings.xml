@@ -7,11 +7,11 @@
 		<item value="false" key="updateTextualMatches"/>
 	</section>
 	<section name="DialogBounds_SuperInterfaceSelectionDialog">
-		<item value="309" key="DIALOG_WIDTH"/>
-		<item value="1|Tahoma|8.25|0|WINDOWS|1|-11|0|0|0|400|0|0|0|1|0|0|0|0|Tahoma" key="DIALOG_FONT_NAME"/>
-		<item value="488" key="DIALOG_HEIGHT"/>
+		<item value="373" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="549" key="DIALOG_HEIGHT"/>
 		<item value="85" key="DIALOG_X_ORIGIN"/>
-		<item value="-28" key="DIALOG_Y_ORIGIN"/>
+		<item value="-5" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item value="2" key="layout"/>
@@ -53,16 +53,16 @@
 	</section>
 	<section name="FatJarPackageWizard">
 		<item value="C:\Users\jccline\workspace.xml" key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION"/>
-		<item value="Test_Run - SE417Assign3" key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME"/>
-		<item value="C:\Users\Josh\Desktop\SE417Assign3\Assign3_Tests.jar" key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION"/>
+		<item value="Calculator - SE339Assign9" key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME"/>
+		<item value="C:\Users\Josh\Desktop\SE339Assign9_Cline.jar" key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION"/>
 		<item value="false" key="FatJarPackageWizardPage.ANTSCRIPT_SAVE"/>
 		<item value="2" key="FatJarPackageWizardPage.LIBRARY_HANDLING"/>
 		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="C:\Users\Josh\Desktop\SE339Assign9_Cline.jar"/>
 			<item value="C:\Users\Josh\Desktop\SE417Assign3\Assign3_Tests.jar"/>
 			<item value="C:\Users\Josh\Downloads\Cline_Simple_Calculator.jar"/>
 			<item value="C:\Users\jccline\Downloads\Cline_Movie_System\Cline_Movie_System.jar"/>
 			<item value="C:\Users\jccline\Downloads\Cline_Movie_System.jar"/>
-			<item value="C:\Users\jccline\Downloads\test_Cline.jar"/>
 		</list>
 		<list key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION_HISTORY">
 			<item value="C:\Users\jccline\workspace.xml"/>
