@@ -3,13 +3,39 @@
   android:orientation="vertical"
   android:layout_width="match_parent"
   android:layout_height="match_parent">
-  <EditText
-    android:id="@+id/myEditText"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="@string/addItemHint"
-    android:contentDescription="@string/addItemContentDescription"
-  />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/myEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="right|top"
+            android:hint="@string/addItemHint"
+            android:contentDescription="@string/addItemContentDescription"
+            />
+
+        <EditText
+            android:id="@+id/myEditMM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/addItemMM"
+            />
+        <EditText
+            android:id="@+id/myEditDD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/addItemDD"
+            />
+        <EditText
+            android:id="@+id/myEditYY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:hint="@string/addItemYY"/>
+    </LinearLayout>
   <ListView
     android:id="@+id/myListView"
     android:layout_width="match_parent"
