@@ -5,12 +5,15 @@ import java.util.ArrayList;
 import android.app.Activity;
 import android.app.FragmentManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ArrayAdapter;
 
-public class ToDoListActivity extends Activity implements NewItemFragment.OnNewItemAddedListener {
+public class ToDoListActivity extends Activity implements NewItemFragment.OnNewItemAddedListener{
   
   private ArrayAdapter<String> aa;
   private ArrayList<String> todoItems;
+  private String item;
+
 
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -34,10 +37,15 @@ public class ToDoListActivity extends Activity implements NewItemFragment.OnNewI
     // Bind the array adapter to the listview.
     todoListFragment.setListAdapter(aa);
   }
-  
-  public void onNewItemAdded(String newItem) {
-    todoItems.add(newItem);
-    aa.notifyDataSetChanged();
-  }
 
-}
+  public void onNewItemAdded(String newItem) {
+    item = newItem;
+
+      todoItems.add(item);
+      aa.notifyDataSetChanged();
+      item = "";
+
+    }
+
+   // Log.e("ITEM", itemS);
+  }

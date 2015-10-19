@@ -33,7 +33,6 @@ public class MainActivity extends ListActivity implements DownloadWebpageTask.Re
 
 	EditText text;
 	ListView list;
-	ArrayList<ItunesRecord> records;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -41,14 +40,12 @@ public class MainActivity extends ListActivity implements DownloadWebpageTask.Re
 		text = (EditText)findViewById(R.id.username);
 		Button search = (Button)findViewById(R.id.search);
 		list = (ListView)findViewById(android.R.id.list);
-		records = new ArrayList<ItunesRecord>();
 		search.setOnClickListener(new OnClickListener() {
 
 			/* (non-Javadoc)
 			 * @see android.view.View.OnClickListener#onClick(android.view.View)
 			 */
 			public void onClick(View v) {
-
 				//TODO get the username to search for from the activity_main.xml view
 				String artist = text.getText().toString();
 				Log.e("Artist Searched", artist);
@@ -68,6 +65,7 @@ public class MainActivity extends ListActivity implements DownloadWebpageTask.Re
 		//TODO Handle the Result of a Network Call
 		JSONArray resObj = null;
 		JSONObject obj = null;
+		ArrayList<ItunesRecord> records = new ArrayList<ItunesRecord>();;
 		try {
 			resObj = new JSONArray(result.substring(result.indexOf("[")));
 		} catch (JSONException e) {

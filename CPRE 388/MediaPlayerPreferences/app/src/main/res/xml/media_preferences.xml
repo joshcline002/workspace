@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Song Order Preference">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/mp_shuffle_pref"
+            android:summary="play songs in random order"
+            android:title="Shuffle"/>
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/mp_repeat_pref"
+            android:summary="Infinitly repeat single song"
+            android:title="Repeat"/>
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="@string/mp_text_pref"
+            android:summery="Not sure what this does"
+            android:hint="Banana"/>
+    </PreferenceCategory>
+</PreferenceScreen>
